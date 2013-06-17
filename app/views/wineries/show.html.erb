@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'Back to all wineries', wineries_path %> |
+<%= link_to "Edit #{@winery.name} details", edit_winery_path(@winery) %>
+<p>
+  <b>Name:</b>
+  <%= @winery.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @winery.location %>
+</p>
+
+<p>
+  <b>Types of wine:</b>
+  <%= @winery.wines.count %>
+</p>
+
+<p>
+<%= link_to "New #{@winery.name} wine", new_winery_wine_path(@winery) %>
+<br />
+<%= link_to "List #{@winery.name} wines",  winery_wines_path(@winery) %>
+</p>

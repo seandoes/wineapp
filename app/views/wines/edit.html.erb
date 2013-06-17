@@ -1,0 +1,8 @@
+<%= link_to "Back to #{@wine.winery.name} wines", winery_wines_path(@wine.winery) %> |
+<%= link_to "Show #{@wine.name} details", [@wine.winery, @wine] %>
+
+<h1>Editing <%= @wine.name %></h1>
+
+<%= render 'form' %>
+
+

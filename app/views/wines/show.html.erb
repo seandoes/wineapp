@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<%= link_to "Back to #{@wine.winery.name} wines", winery_wines_path(@wine.winery) %> | <%= link_to "Edit #{@wine.name} details", edit_winery_wine_path(@wine.winery, @wine) %>
+<p>
+  <b>Name:</b>
+  <%= @wine.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @wine.description %>
+</p>

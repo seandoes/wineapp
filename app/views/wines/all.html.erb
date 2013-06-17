@@ -1,0 +1,23 @@
+<%= link_to 'Back to wineries', wineries_url %>
+<h1>Listing all wines</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Winery</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @wines.each do |wine| %>
+  <tr>
+    <td><%= wine.name %></td>
+    <td><%= wine.winery.name %></td>
+    <td><%= wine.description %></td>
+    <td><%= link_to 'Show', [wine.winery, wine] %></td>
+    <td><%= link_to 'Edit', edit_winery_wine_path(wine.winery, wine) %></td>
+    <td><%= link_to 'Destroy', [wine.winery, wine], method: :delete, data: { confirm: "Are you sure? (Here be dragons...you'll get lost!)" } %></td>
+  </tr>
+<% end %>
+</table>
