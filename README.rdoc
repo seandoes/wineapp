@@ -1,1 +1,3 @@
-Wine store inventory app
+==Wine store inventory app.
+
+rake db:seed
