@@ -24,6 +24,8 @@ gem 'jquery-rails'
 
 gem 'friendly_id'
 
+gem 'rspec-rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

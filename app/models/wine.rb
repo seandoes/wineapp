@@ -4,6 +4,4 @@ class Wine < ActiveRecord::Base
   belongs_to :winery
   extend FriendlyId
   friendly_id :name, use: [:slugged, :history]
-
-
 end
